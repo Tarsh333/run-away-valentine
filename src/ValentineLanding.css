@@ -1,0 +1,56 @@
+.valentine-container {
+  height: 100vh;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.heart {
+  font-size: 100px;
+  cursor: pointer;
+  animation: pulse 1.2s infinite;
+  user-select: none;
+}
+
+.heart-ready {
+  animation: none;
+  transform: scale(1.2);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.progress-bar {
+  width: 260px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: white;
+  width: 0;
+  transition: width 0.4s ease;
+}
+
+.message {
+  margin-top: 16px;
+  font-size: 18px;
+  text-align: center;
+}
