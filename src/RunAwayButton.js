@@ -1,29 +1,34 @@
 import React, { useState } from 'react';
+import './Please.css';
 
 const RunAwayButton = () => {
-    const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [position, setPosition] = useState({
+    x: window.innerWidth / 2 + 120,
+    y: window.innerHeight / 2 + 120,
+  });
 
-  const handleMouseMove = (e) => {
-    const newX = Math.random() * (window.innerWidth-200);
-    const newY = Math.random() * (window.innerHeight-200);
+  const moveButton = () => {
+    const padding = 100;
+    const newX = Math.random() * (window.innerWidth - padding);
+    const newY = Math.random() * (window.innerHeight - padding);
+
     setPosition({ x: newX, y: newY });
   };
 
   return (
-    <div style={{
-        position: 'absolute',
-        left: `${position.x}px`,
-        top: `${position.y}px`,
-        transition: 'left 0.2s, top 0.2s',
-        padding:'10px',
-      }} onMouseMove={handleMouseMove}>
-
     <button
-      className='button-style'
-        >
-      No!
+      type="button"
+      className="no-button"
+      style={{
+        position: 'absolute',
+        left: position.x,
+        top: position.y,
+      }}
+      onMouseDown={moveButton}
+      onTouchStart={moveButton}
+    >
+      No 😈
     </button>
-        </div>
   );
 };
 
