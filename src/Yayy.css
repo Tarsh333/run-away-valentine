@@ -1,0 +1,89 @@
+.yayy-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffe0e9, #fff1f5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.floating-hearts {
+  position: absolute;
+  top: 20px;
+  font-size: 32px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.yayy-title {
+  font-size: 42px;
+  color: #ff4d6d;
+  margin-bottom: 8px;
+}
+
+.yayy-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.photo-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo-row img {
+  width: 160px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.photo-row img:hover {
+  transform: scale(1.05);
+}
+
+.yayy-message {
+  font-size: 18px;
+  color: #333;
+  max-width: 500px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.yayy-footer {
+  font-size: 16px;
+  color: #ff4d6d;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .yayy-title {
+    font-size: 34px;
+  }
+
+  .photo-row img {
+    width: 130px;
+    height: 170px;
+  }
+}
