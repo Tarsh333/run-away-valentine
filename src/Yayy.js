@@ -6,9 +6,13 @@ const Yayy = () => {
     <div className="yayy-page">
       <div className="floating-hearts">💖💘💝</div>
 
-      <h1 className="yayy-title">She said YES 💕</h1>
+      <h1 className="yayy-title">
+        She said YES 💕
+      </h1>
 
-      <p className="yayy-subtitle">This just became my favorite love story.</p>
+      <p className="yayy-subtitle">
+        Parna… you just made my heart do backflips 💗
+      </p>
 
       <div className="photo-row">
         <img src="/us1.jpeg" alt="Us 1" />
@@ -17,11 +21,15 @@ const Yayy = () => {
       </div>
 
       <p className="yayy-message">
-        I can’t wait to make more memories with you 💗 Dates, laughs, late
-        talks, and everything in between.
+        Mistu, Kulfi Malai, meri jaan —  
+        I’m so happy it’s you.  
+        I can’t wait for our dates, our silly laughs, our late-night talks,
+        and all the little moments that make us… us 💖
       </p>
 
-      <p className="yayy-footer">See you soon, Valentine ❤️</p>
+      <p className="yayy-footer">
+        Yours, always ❤️
+      </p>
     </div>
   );
 };
